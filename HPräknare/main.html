@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP 17bII+ Kalkylator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <!-- Grundläggande operationer -->
+            <button class="btn" onclick="appendNumber(7)">7</button>
+            <button class="btn" onclick="appendNumber(8)">8</button>
+            <button class="btn" onclick="appendNumber(9)">9</button>
+            <button class="btn operator" onclick="setOperator('+')">+</button>
+        
+            <button class="btn" onclick="appendNumber(4)">4</button>
+            <button class="btn" onclick="appendNumber(5)">5</button>
+            <button class="btn" onclick="appendNumber(6)">6</button>
+            <button class="btn operator" onclick="setOperator('-')">-</button>
+        
+            <button class="btn" onclick="appendNumber(1)">1</button>
+            <button class="btn" onclick="appendNumber(2)">2</button>
+            <button class="btn" onclick="appendNumber(3)">3</button>
+            <button class="btn operator" onclick="setOperator('*')">*</button>
+        
+            <button class="btn" onclick="appendNumber(0)">0</button>
+            <button class="btn" onclick="clearDisplay()">C</button>
+            <button class="btn" onclick="calculateResult()">=</button>
+            <button class="btn operator" onclick="setOperator('/')">/</button>
+        
+            <!-- Funktioner -->
+            <button class="btn function" onclick="calculateSin()">sin</button>
+            <button class="btn function" onclick="calculateCos()">cos</button>
+            <button class="btn function" onclick="calculateTan()">tan</button>
+            <button class="btn function" onclick="calculateArcsin()">asin</button>
+        
+            <button class="btn function" onclick="calculateArccos()">acos</button>
+            <button class="btn function" onclick="calculateArctan()">atan</button>
+            <button class="btn function" onclick="calculateSquareRoot()">√</button>
+            <button class="btn function" onclick="calculateLog()">log</button>
+        
+            <button class="btn function" onclick="toggleMode()">DEG/RAD</button>
+            <button class="btn function" onclick="calculatePower()">x²</button>
+            <button class="btn function" onclick="calculateExp()">exp</button>
+        
+            <button class="btn function" onclick="calculatePV()">PV</button>
+            <button class="btn function" onclick="calculateFV()">FV</button>
+            <button class="btn function" onclick="calculatePMT()">PMT</button>
+        
+            <!-- Minnesfunktioner -->
+            <button class="btn function" onclick="clearMemory()">MC</button>
+            <button class="btn function" onclick="memoryRecall()">MR</button>
+            <button class="btn function" onclick="memoryStore()">MS</button>
+            <button class="btn function" onclick="memoryAdd()">M+</button>
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
